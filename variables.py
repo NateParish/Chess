@@ -1,0 +1,36 @@
+import pygame
+
+pygame.font.init()
+
+
+
+SCREENWIDTH = 1500
+SCREENHEIGHT = 1000
+TOPBORDER = 50
+BOTTOMBORDER = 50
+SIDEBORDER = 50
+FPS = 60
+
+WHITE = [255,255,255]
+BLACK = [0,0,0]
+RED = [255,0,0]
+GREEN = [0,255,0]
+BLUE = [0,0,255]
+BACKGROUNDGREY = [25,25,25]
+
+BOARDWHITE = [255,255,200]
+BOARDBLACK = [94,121,30]
+SQUAREWIDTH = (SCREENHEIGHT - TOPBORDER - BOTTOMBORDER)/8
+
+SQUAREHEIGHT = SQUAREWIDTH
+
+BOARDXOFFSET = (SCREENWIDTH - SQUAREWIDTH*8-SIDEBORDER)
+BOARDYOFFSET = TOPBORDER
+
+mainFont = pygame.font.SysFont("ariel", 50)
+lostFont = pygame.font.SysFont("ariel", 60)
+titleFont = pygame.font.SysFont("ariel", 50)
+
+
+WIN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
+CAPTION = "Chess"
